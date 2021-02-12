@@ -1,11 +1,5 @@
 # donkhouse-coolers
 
-For a look at how hand equities change look at hands_stat_analysis.ipynb.
+I know some people were skeptical about hands played on Donkhouse. To verify if the site overall changed poker equities, I wrote some javascript code to "play" poker automatically (ie bet/call 100 preflop and check till showdown). I call this code using selenium in play_donk.ipynb. I simulated around 7k hands, while scraping them with donk_scraper.py. 
 
-To view hands, use view_donk_hands.ipynb
-
-Hand histories are stored in the donk_hands folder included in this repo (sorted by table). Tables "donk_1" through "donk_8" are simulated hands.
-
-To scrape hands run the donk_scraper.py file. It will log in, and scrape hand histories at tables with 2 or more players sitting.
-
-To simulate your own donk hands, use the play_donk.ipynb. It runs javascript in your browser to always bet 100 or call preflop and check down flop, turn & river.
+In hands_stat_analysis.ipynb, I ran some basic tests of how hand equities change from street to street. I didn't find anything out of the ordinary but I've included the simulated hand histories in the folders donk_1 - donk_8.
